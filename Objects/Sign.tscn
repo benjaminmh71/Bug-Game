@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://byy3nutlis1bg"]
+
+[ext_resource type="Script" path="res://Objects/Sign.gd" id="1_q73ob"]
+[ext_resource type="Texture2D" uid="uid://b66w58gvv26xh" path="res://Assets/testBox.png" id="2_wnyv4"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_q73ob")
+text = "A and D to move"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wnyv4")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -100.0
+offset_top = -34.0
+offset_right = 100.0
+offset_bottom = -8.0
+rotation = -0.00129754
+text = "Test"
+horizontal_alignment = 1
