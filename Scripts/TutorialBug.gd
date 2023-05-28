@@ -14,6 +14,6 @@ func _physics_process(delta):
 	
 	velocity.x = direction * speed
 	if (Raycast.is_colliding() and not (Raycast.get_collider() is CharacterBody2D)):
-		direction = direction * -1
-		Raycast.target_position.x = Raycast.target_position.x * -1
+		direction *= -1
+		scale.x *= -1
 	move_and_slide()

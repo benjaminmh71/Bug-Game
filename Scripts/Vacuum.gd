@@ -4,8 +4,7 @@ extends Area2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for bug in bugs.get_children():
-		body_entered.connect(bug.on_vacuum)
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,3 +20,7 @@ func _process(delta):
 		hide()
 		monitorable = false
 		monitoring = false
+
+func _on_body_entered(body : Bug):
+	if (body.can_capture):
+		body.queue_free()

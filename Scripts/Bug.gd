@@ -16,7 +16,3 @@ func jump():
 func fall(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-
-func on_vacuum(body):
-	if (can_capture and body == self):
-		queue_free()
