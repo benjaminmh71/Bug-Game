@@ -1,5 +1,6 @@
 extends Bug
 
+@onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var Raycast = $RayCast2D
 
 var direction = 1
@@ -10,6 +11,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	animated_sprite_2d.play("Walk")
 	fall(delta)
 	
 	velocity.x = direction * speed
