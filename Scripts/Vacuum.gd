@@ -27,10 +27,12 @@ func _process(delta):
 	if (Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT) and captured_bugs.size() > 0):
 		var thrown_bug = captured_bugs[0]
 		bugs_folder.add_child(thrown_bug)
+		var difference = get_global_mouse_position() - get_parent().global_position
+		var angle = atan2(difference.y, difference.x)
 		thrown_bug.global_position = global_position
-		thrown_bug.scale.y = 1
-		thrown_bug.rotation = 0
 		thrown_bug.direction = 1
+		thrown_bug.update_direction()
+		thrown_bug.velocity = difference.normalized() * 400
 		captured_bugs.remove_at(0)
 	
 	captured_bugs_label.text = str(captured_bugs.size())

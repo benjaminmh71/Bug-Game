@@ -96,6 +96,3 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_xmwll")
-
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(35, 0)

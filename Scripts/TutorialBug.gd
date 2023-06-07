@@ -1,9 +1,6 @@
 extends Bug
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var Raycast = $RayCast2D
-
-var direction = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,8 +11,10 @@ func _physics_process(delta):
 	animated_sprite_2d.play("Walk")
 	fall(delta)
 	
-	velocity.x = direction * speed
-	if (Raycast.is_colliding() and not (Raycast.get_collider() is CharacterBody2D)):
+	if (is_on_floor()):
+		velocity = velocity.move_toward(Vector2.RIGHT * direction * speed, speed)
+	if (is_on_wall() and is_on_floor()):
 		direction *= -1
-		scale.x *= -1
+	
+	update_direction()
 	move_and_slide()

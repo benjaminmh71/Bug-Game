@@ -8,6 +8,7 @@ class_name Bug
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 var can_capture = false
+var direction = 1
 
 func jump():
 	if is_on_floor():
@@ -16,3 +17,11 @@ func jump():
 func fall(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
+
+func update_direction():
+	if (direction == 1):
+		scale.y = 1
+		rotation = 0
+	if (direction == -1):
+		scale.y = -1
+		rotation = PI
