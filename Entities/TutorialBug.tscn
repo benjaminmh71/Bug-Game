@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b584suvj7dxh1"]
+[gd_scene load_steps=15 format=3 uid="uid://b584suvj7dxh1"]
 
 [ext_resource type="Script" path="res://Scripts/TutorialBug.gd" id="1_tx2pc"]
 [ext_resource type="Texture2D" uid="uid://prbgr0nf57m5" path="res://Assets/Roach.png" id="2_b2tn1"]
@@ -82,10 +82,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xmwll"]
 size = Vector2(24, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3g8xk"]
+size = Vector2(24, 16)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 4
 script = ExtResource("1_tx2pc")
+health = 10.0
 speed = 100.0
+jump_velocity = 0.0
+throw_damage = 10.0
+self_throw_damage = 10.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.5, 0)
@@ -96,3 +103,11 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_xmwll")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_3g8xk")

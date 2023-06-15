@@ -37,6 +37,10 @@ shape = SubResource("RectangleShape2D_5nr28")
 position = Vector2(24, 0)
 texture = ExtResource("3_a1skp")
 
+[node name="ThrowDelay" type="Timer" parent="Vacuum"]
+wait_time = 0.5
+one_shot = true
+
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
