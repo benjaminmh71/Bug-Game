@@ -1,0 +1,171 @@
+:: StoryTitle
+Bug Game Pilot
+
+
+:: StoryData
+{
+  "ifid": "34835988-A94F-4ED1-A3B6-9ECC8DE5E496",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Initial Interaction",
+  "zoom": 1
+}
+
+
+:: **Player would enter their own answer** {"position":"575,1125","size":"100,100"}
+The pilot considers, then shrugs. 
+
+Not too bad, I suppose.
+
+[[Thank you. By the way, what is your name?|Name]]
+
+[[Hmph. Where on the planet did we land?|Delightful. Where on the planet did we land?]]
+
+[[Walk away.]]
+
+
+:: Delightful. Where on the planet did we land? {"position":"1000,525","size":"100,100"}
+**This will depend on game design and what the first level is. Everything the pilot will say will depend on what the user needs to know, nothing super relevant to the story, so I'm leaving this to be filled in later
+
+[[Have you made up any constellations here?]]
+
+[[What is your name?|Name]]
+
+[[Walk away.]]
+
+
+:: Have you made up any constellations here? {"position":"550,675","size":"100,100"}
+The pilot frowns and stares at the stars for a moment. Then he points. 
+
+See that there? Looks like a bag of popcorn, doesn't it?
+
+[[Yes.]]
+
+[[No.]]
+
+
+:: Initial Interaction {"position":"575,200","size":"100,100"}
+You (the player) walks into cockpit and finds engineer kicked back, relaxing and watching the stars. (I’m assuming we begin the game already at the alien planet and hovering in space or on the planet). 
+
+[[Um...hello?]]
+
+[[What are you doing? Are you sleeping? Get up!]]
+
+[[Walk away.]]
+
+
+:: Join the pilot. {"position":"825,450","size":"100,100"}
+None of the constellations here are the same as the ones on Earth, you know? I like to make up my own when visiting new planets. 
+
+[[Have you made up any constellations here?]]
+
+[[How wonderful. Well, now I know two things about you: You wanted to be an astronaut so you could visit all the stars, and you like to make up your own constellations. Think I could learn something a little more...useful...? Like your name?|Name]]
+
+[[Delightful. Where on the planet did we land?]]
+
+[[Walk away.]]
+
+
+
+
+:: My past is far too complicated and exciting to sum up in a few seconds, or even minutes. {"position":"875,975","size":"100,100"}
+The pilot nods and doesn't push.
+
+[[Have you made up any constellations here?]]
+
+[[Delightful. Where on the planet did we land?]]
+
+[[Walk away.]]
+
+
+:: Name {"position":"1025,825","size":"100,100"}
+Oh! Where are my manners? My name is xxx. I've been an astronaut my whole life. Or, at least, I've spent most of my life trying to become an astronaut or being one. Ten years ago I met xxx and xxx (engineer and researcher) during the off-time between missions. We actually met at one of xxx's (bossman's) zoos. The rest is history. Yourself?
+
+[[My past is far too complicated and exciting to sum up in a few seconds, or even minutes.]]
+
+[[There's nothing to talk about, really.]]
+
+
+
+
+
+:: No. {"position":"725,825","size":"100,100"}
+The pilot shakes his head.
+
+Guess I haven't found any, then. 
+
+He continues to stare at the sky, looking peaceful.
+
+[[Who are you?|Name]]
+
+[[Delightful. Where on the planet did we land?]]
+
+[[Walk away.]]
+
+
+:: Please don't. {"position":"675,975","size":"100,100"}
+The pilot laughs. 
+
+Well, what do you suggest then?
+
+[[**Player would enter their own answer**]]
+
+
+:: Shouldn't you be, you know, piloting? {"position":"700,450","size":"100,100"}
+Not while we're on the ground! I take it you didn't know we landed a few minutes ago. While we're not flying, I like to watch the stars. They're the reason wanted to become an astronaut. When I was young, I swore I'd find a way to visit them all. Ha! Now I just like to watch them.
+
+[[Join the pilot.]]
+
+[[Walk away.]]
+
+
+:: There's nothing to talk about, really. {"position":"1150,950","size":"100,100"}
+The pilot nods and doesn't push.
+
+[[Have you made up any constellations here?]]
+
+[[Delightful. Where on the planet did we land?]]
+
+[[Walk away.]]
+
+
+:: Um...hello? {"position":"700,325","size":"100,100"}
+The pilot glances behind his shoulder.
+
+"Ah! You must be our brave new bug collector. Please, join me. I was just watching the stars."
+
+[[Shouldn't you be, you know, piloting?]]
+
+[[Join the pilot.]]
+
+[[Walk away.]]
+
+
+:: Walk away. {"position":"500,500","size":"100,100"}
+The interaction ends.
+
+
+:: What are you doing? Are you sleeping? Get up! {"position":"450,325","size":"100,100"}
+The pilot looks startled. He whips around, but upon seeing the player, relaxes.
+
+"Ah! You must be our brave new bug collector. No, I wasn't sleeping. Just watching the stars. Please, join me."
+
+[[Shouldn't you be, you know, piloting?]]
+
+[[Join the pilot.]]
+
+[[Walk away.]]
+
+
+:: Yes. {"position":"350,800","size":"100,100"}
+The pilot smiles. 
+
+In that case, yes, I have just found my own constellation. I think I'll call it...The Big Bag. 
+
+[[Please don't.]]
+
+[[I hope you have a better name than that.|Name]]
+
+[[Delightful. Where on the planet did we land?]]
+
+[[Walk away.]]

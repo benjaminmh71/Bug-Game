@@ -27,7 +27,7 @@ func _process(delta):
 	
 	if (Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT) and captured_bugs.size() > 0 and throw_delay.time_left == 0):
 		throw_delay.start()
-		var thrown_bug = captured_bugs[0]
+		var thrown_bug = captured_bugs[0].duplicate()
 		bugs_folder.add_child(thrown_bug)
 		var difference = get_global_mouse_position() - get_parent().global_position
 		var angle = atan2(difference.y, difference.x)
