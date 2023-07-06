@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctgk377cx347s"]
+[gd_scene load_steps=9 format=3 uid="uid://ctgk377cx347s"]
 
 [ext_resource type="PackedScene" uid="uid://cwnsri7bdwd5y" path="res://Entities/Player.tscn" id="1_0y1ul"]
 [ext_resource type="PackedScene" uid="uid://b584suvj7dxh1" path="res://Entities/TutorialBug.tscn" id="2_mo26m"]
 [ext_resource type="Texture2D" uid="uid://b66w58gvv26xh" path="res://Assets/testBox.png" id="3_4ui5e"]
 [ext_resource type="PackedScene" uid="uid://2km82ism7fxx" path="res://Objects/Sign.tscn" id="4_qfbgs"]
 [ext_resource type="Script" path="res://Scripts/DialogueReader.gd" id="5_m7ryb"]
+[ext_resource type="PackedScene" uid="uid://cwt3noaoopfa4" path="res://Entities/Pilot.tscn" id="6_afi6x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_34ruh"]
 texture = ExtResource("3_4ui5e")
@@ -20,6 +21,7 @@ sources/0 = SubResource("TileSetAtlasSource_34ruh")
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_0y1ul")]
+unique_name_in_owner = true
 position = Vector2(278, 162)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -58,3 +60,6 @@ text = "LMB to capture enemies"
 
 [node name="Node" type="Node" parent="."]
 script = ExtResource("5_m7ryb")
+
+[node name="Node2D2" parent="." instance=ExtResource("6_afi6x")]
+position = Vector2(36, 604)
