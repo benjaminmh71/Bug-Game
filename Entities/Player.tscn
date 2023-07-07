@@ -42,12 +42,19 @@ wait_time = 0.5
 one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
 
 [node name="HUD" parent="." instance=ExtResource("5_a1oyw")]
 
 [node name="InvincibilityTimer" type="Timer" parent="."]
 wait_time = 0.5
+one_shot = true
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="WallCoyoteTimer" type="Timer" parent="."]
+wait_time = 0.1
 one_shot = true
 
 [connection signal="body_entered" from="Vacuum" to="Vacuum" method="_on_body_entered"]
