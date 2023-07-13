@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ctgk377cx347s"]
+[gd_scene load_steps=10 format=3 uid="uid://ctgk377cx347s"]
 
 [ext_resource type="PackedScene" uid="uid://cwnsri7bdwd5y" path="res://Entities/Player.tscn" id="1_j370d"]
 [ext_resource type="Texture2D" uid="uid://b66w58gvv26xh" path="res://Assets/testBox.png" id="2_sgeqf"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b584suvj7dxh1" path="res://Entities/TutorialBug.tscn" id="4_nvnco"]
 [ext_resource type="Script" path="res://Scripts/DialogueReader.gd" id="5_72076"]
 [ext_resource type="PackedScene" uid="uid://cwt3noaoopfa4" path="res://Entities/Pilot.tscn" id="6_srvfh"]
+[ext_resource type="PackedScene" uid="uid://cwj5muc7w268s" path="res://Objects/Spike.tscn" id="7_lbj0w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_34ruh"]
 texture = ExtResource("2_sgeqf")
@@ -64,3 +65,6 @@ script = ExtResource("5_72076")
 
 [node name="Node2D2" parent="." instance=ExtResource("6_srvfh")]
 position = Vector2(36, 604)
+
+[node name="Node2D3" parent="." instance=ExtResource("7_lbj0w")]
+position = Vector2(115, 603)
