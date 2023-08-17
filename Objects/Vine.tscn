@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://mtnsqg4sx0cs"]
+
+[ext_resource type="Script" path="res://Scripts/Vine.gd" id="1_ft22h"]
+[ext_resource type="Texture2D" uid="uid://b66w58gvv26xh" path="res://Assets/testBox.png" id="1_nxvfa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6q7xf"]
+size = Vector2(8, 256)
+
+[node name="Vine" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ft22h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 128)
+scale = Vector2(0.5, 16)
+texture = ExtResource("1_nxvfa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 128)
+shape = SubResource("RectangleShape2D_6q7xf")

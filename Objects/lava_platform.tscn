@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqkfd1bjibdmu"]
+
+[ext_resource type="Texture2D" uid="uid://b66w58gvv26xh" path="res://Assets/testBox.png" id="1_bvrik"]
+[ext_resource type="Script" path="res://Scripts/lava_platform.gd" id="1_ngd41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgvi5"]
+size = Vector2(80, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_ngd41")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5, 1)
+texture = ExtResource("1_bvrik")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lgvi5")
